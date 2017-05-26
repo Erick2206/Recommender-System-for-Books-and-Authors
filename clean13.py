@@ -1,17 +1,16 @@
 import pandas as pd
 
 outfile="papers13edit.csv"
-data=pd.read_csv('papers13.csv')
+data=pd.read_csv('paper13.csv')
 
 ##print data.head()
 for index,row in data.iterrows():
-    row["keywords"]=row["keywords"].split('\n')
-    if not pd.isnull(row["topics"]):
-        row["topics"]=row["topics"].split("\n")
+    row["Keywords"]=row["Keywords"].split('\n')
+    if not pd.isnull(row["Topics"]):
+        row["Topics"]=row["Topics"].split("\n")
 #    print row["topics"]
-    row["abstract"]=row["abstract"].replace('\n',' ')
-    if not pd.isnull(row["groups"]):
-        row['groups']=row['groups'].split("\n")
+    row["Abstract"]=row["Abstract"].replace('\n',' ')
+    row['High-Level Keyword(s)']=row['High-Level Keyword(s)'].split("\n")
 
 data.index.name="index"
 data.to_csv(outfile, sep=',', encoding='utf-8')
