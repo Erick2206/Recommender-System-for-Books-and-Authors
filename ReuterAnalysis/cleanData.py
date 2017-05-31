@@ -17,7 +17,7 @@ for index,row in data.iterrows():
         for allwords in word:
             allwords=ps.stem(allwords)
             word_dataset.append(allwords)
-    row['Article']=word_dataset
+    row['Article']=' '.join(word_dataset)
 
 data.index.name="Index"
 data.to_csv(fileName,sep='\t')
