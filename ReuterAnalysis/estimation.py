@@ -4,16 +4,16 @@ from sklearn.cluster import KMeans
 from sklearn import metrics
 
 inFile="data.csv"
-num_clusters=2
+num_clusters=50
 
 data=pd.read_csv(inFile,delimiter='\t')
 print data.head()
-vectorizer=TfidfVectorizer(max_df=0.9,min_df=5,stop_words='english',lowercase=True,ngram_range=(1,2))
+vectorizer=TfidfVectorizer(min_df=5,stop_words='english',lowercase=True,ngram_range=(1,2))
 X1=vectorizer.fit(data.Article)
 X=X1.transform(data.Article)
 classifier=KMeans(n_clusters=num_clusters, n_init=1, verbose=1)
 classifier.fit(X)
-
+print classifier.labels_
 print "Adjusted Rand-Index: %.3f" % metrics.adjusted_rand_score(data.Author,classifier.labels_)
 print "Silhouette Coefficient: %.3f" % metrics.silhouette_score(X,classifier.labels_,sample_size=100)
 
@@ -22,3 +22,4 @@ test=vectorizer.transform(['China gave new details on Wednesday of the failed la
 print classifier.predict(test)
 
 #print vectorizer.get_feature_names()
+print metrics.adjusted_rand_score(['a','b','a','b','b','a'],[0,1,0,1,1,0])

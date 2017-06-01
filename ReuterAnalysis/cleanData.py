@@ -1,3 +1,4 @@
+from csv import QUOTE_NONE
 import pandas as pd
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
@@ -7,7 +8,7 @@ fileName="data.csv"
 cachedStopWords=stopwords.words("english")
 ps=PorterStemmer()
 
-data=pd.read_csv(fileName,delimiter="    ",engine="python")
+data=pd.read_csv(fileName,delimiter="    ",engine="python",quoting=QUOTE_NONE)
 for index,row in data.iterrows():
     word_dataset=[]
     sentences=sent_tokenize(row['Article'])
