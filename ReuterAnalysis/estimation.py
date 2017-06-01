@@ -11,7 +11,7 @@ print data.head()
 vectorizer=TfidfVectorizer(max_df=0.9,min_df=5,stop_words='english',lowercase=True,ngram_range=(1,2))
 X1=vectorizer.fit(data.Article)
 X=X1.transform(data.Article)
-classifier=KMeans(n_clusters=num_clusters, init='random', n_init=1, verbose=1)
+classifier=KMeans(n_clusters=num_clusters, n_init=1, verbose=1)
 classifier.fit(X)
 
 print "Adjusted Rand-Index: %.3f" % metrics.adjusted_rand_score(data.Author,classifier.labels_)
