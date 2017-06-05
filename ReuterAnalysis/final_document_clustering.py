@@ -43,9 +43,6 @@ km = MiniBatchKMeans(n_clusters=true_k, init='k-means++', n_init=1,
 print("Clustering sparse data with %s" % km)
 km.fit(X)
 
-print("Homogeneity: %0.3f" % metrics.homogeneity_score(labels, km.labels_))
-print("Completeness: %0.3f" % metrics.completeness_score(labels, km.labels_))
-print("V-measure: %0.3f" % metrics.v_measure_score(labels, km.labels_))
 print("Adjusted Rand-Index: %.3f"
       % metrics.adjusted_rand_score(labels, km.labels_))
 print("Silhouette Coefficient: %0.3f"
@@ -55,13 +52,7 @@ print()
 
 if True:
     print("Top terms per cluster:")
-
-    if False:
-        original_space_centroids = svd.inverse_transform(km.cluster_centers_)
-        order_centroids = original_space_centroids.argsort()[:, ::-1]
-        print(True)
-    else:
-        order_centroids = km.cluster_centers_.argsort()[:, ::-1]
+    order_centroids = km.cluster_centers_.argsort()[:, ::-1]
 
     terms = vectorizer.get_feature_names()
     for i in range(true_k):
