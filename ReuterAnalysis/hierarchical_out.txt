@@ -1,0 +1,228 @@
+ARI: 0.402Silhouette Co-efficient: 0.006 ARI: 0.402
+Silhouette Co-efficient: 0.007
+
+ARI: 0.402
+Silhouette Co-efficient: 0.007
+
+ARI: 0.402
+Silhouette Co-efficient: 0.007
+
+ARI: 0.325
+Silhouette Co-efficient: 0.007
+
+ARI: 0.325
+Silhouette Co-efficient: 0.008
+
+ARI: 0.024
+Silhouette Co-efficient: 0.007
+
+ARI: 0.019
+Silhouette Co-efficient: 0.007
+
+ARI: 0.224
+Silhouette Co-efficient: 0.009
+
+ARI: 0.319
+Silhouette Co-efficient: 0.005
+
+ARI: 0.023
+Silhouette Co-efficient: 0.001
+
+ARI: 0.001
+Silhouette Co-efficient: 0.001
+
+ARI: 0.012
+Silhouette Co-efficient: 0.003
+
+ARI: 0.012
+Silhouette Co-efficient: 0.003
+
+ARI: 0.001
+Silhouette Co-efficient: 0.004
+
+ARI: 0.076
+Silhouette Co-efficient: 0.003
+
+ARI: 0.043
+Silhouette Co-efficient: 0.002
+
+ARI: 0.023
+Silhouette Co-efficient: 0.001
+
+ARI: 0.043
+Silhouette Co-efficient: 0.002
+
+ARI: 0.043
+Silhouette Co-efficient: 0.002
+
+ARI: 0.076
+Silhouette Co-efficient: 0.003
+
+ARI: -0.000
+Silhouette Co-efficient: 0.004
+
+ARI: -0.000
+Silhouette Co-efficient: 0.004
+
+ARI: -0.000
+Silhouette Co-efficient: 0.004
+
+ARI: -0.000
+Silhouette Co-efficient: 0.011
+
+ARI: -0.001
+Silhouette Co-efficient: 0.008
+
+ARI: -0.000
+Silhouette Co-efficient: 0.013
+
+ARI: 0.402
+Silhouette Co-efficient: 0.006
+
+ARI: 0.402
+Silhouette Co-efficient: 0.007
+
+ARI: 0.402
+Silhouette Co-efficient: 0.006
+
+ARI: 0.024
+Silhouette Co-efficient: 0.006
+
+ARI: 0.024
+Silhouette Co-efficient: 0.006
+
+ARI: 0.024
+Silhouette Co-efficient: 0.008
+
+ARI: 0.325
+Silhouette Co-efficient: 0.008
+
+ARI: 0.325
+Silhouette Co-efficient: 0.009
+
+ARI: 0.325
+Silhouette Co-efficient: 0.008
+
+ARI: 0.319
+Silhouette Co-efficient: 0.005
+
+ARI: 0.319
+Silhouette Co-efficient: 0.006
+
+ARI: 0.319
+Silhouette Co-efficient: 0.006
+
+ARI: 0.019
+Silhouette Co-efficient: 0.009
+
+ARI: 0.019
+Silhouette Co-efficient: 0.007
+
+ARI: 0.224
+Silhouette Co-efficient: 0.007
+
+ARI: 0.224
+Silhouette Co-efficient: 0.006
+
+ARI: 0.224
+Silhouette Co-efficient: 0.007
+
+ARI: 0.023
+Silhouette Co-efficient: 0.001
+
+ARI: 0.023
+Silhouette Co-efficient: 0.001
+
+ARI: 0.012
+Silhouette Co-efficient: 0.003
+
+ARI: 0.001
+Silhouette Co-efficient: 0.001
+
+ARI: 0.001
+Silhouette Co-efficient: 0.002
+
+ARI: 0.043
+Silhouette Co-efficient: 0.002
+
+ARI: 0.001
+Silhouette Co-efficient: 0.004
+
+ARI: 0.076
+Silhouette Co-efficient: 0.003
+
+ARI: -0.000
+Silhouette Co-efficient: 0.004
+
+ARI: -0.000
+Silhouette Co-efficient: 0.003
+
+ARI: -0.000
+Silhouette Co-efficient: 0.003
+
+ARI: -0.000
+Silhouette Co-efficient: 0.009
+
+ARI: -0.001
+Silhouette Co-efficient: 0.008
+
+ARI: -0.000
+Silhouette Co-efficient: 0.012
+
+ARI: 0.325
+Silhouette Co-efficient: 0.005
+
+ARI: 0.009
+Silhouette Co-efficient: 0.003
+
+ARI: 0.363
+Silhouette Co-efficient: 0.005
+
+ARI: 0.344
+Silhouette Co-efficient: 0.006
+
+ARI: 0.018
+Silhouette Co-efficient: 0.007
+
+ARI: 0.197
+Silhouette Co-efficient: 0.003
+
+ARI: 0.101
+Silhouette Co-efficient: 0.001
+
+ARI: 0.002
+Silhouette Co-efficient: 0.001
+
+ARI: 0.034
+Silhouette Co-efficient: 0.002
+
+ARI: 0.034
+Silhouette Co-efficient: 0.001
+
+ARI: 0.045
+Silhouette Co-efficient: 0.001
+
+ARI: 0.018
+Silhouette Co-efficient: 0.003
+
+ARI: 0.032
+Silhouette Co-efficient: -0.000
+
+ARI: 0.163
+Silhouette Co-efficient: 0.002
+
+ARI: -0.000
+Silhouette Co-efficient: 0.002
+
+ARI: 0.373
+Silhouette Co-efficient: 0.006
+
+ARI: -0.000
+Silhouette Co-efficient: -0.001
+
+ARI: -0.000
+Silhouette Co-efficient: 0.008
+
+ARI: -0.000
+Silhouette Co-efficient: -0.002
+

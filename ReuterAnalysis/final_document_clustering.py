@@ -12,14 +12,19 @@ from time import time
 
 import numpy as np
 
-
-categories = [
+categories =[
     'alt.atheism',
     'rec.sport.baseball',
     'comp.graphics',
     'sci.space',
+    'rec.sport.hockey',
+    'comp.windows.x'
 ]
-dataset = fetch_20newsgroups(subset='all', categories=categories,
+
+categories=['comp.sys.mac.hardware',
+    'misc.forsale', 'talk.politics.mideast', 'rec.autos']
+
+dataset = fetch_20newsgroups(subset='train', categories=categories,
                              shuffle=True, random_state=42)
 
 labels = dataset.target
@@ -28,17 +33,18 @@ print(true_k)
 
 print("Extracting features from the training dataset using a sparse vectorizer")
 print("Running tfidf")
-vectorizer = TfidfVectorizer(max_df=0.5, max_features=10000,
+vectorizer = TfidfVectorizer(max_df=0.5,max_features=10000,
                              min_df=2, stop_words='english',
-                             use_idf=True)
+                             use_idf=False,norm='l2')
 X = vectorizer.fit_transform(dataset.data)
 print(X.shape)
-
 print("n_samples: %d, n_features: %d" % X.shape)
 print()
 
 km = MiniBatchKMeans(n_clusters=true_k, init='k-means++', n_init=1,
                      init_size=1000, batch_size=1000, verbose=True)
+
+km=KMeans(n_clusters=true_k, init='k-means++', max_iter=100, n_init=1)
 
 print("Clustering sparse data with %s" % km)
 km.fit(X)
