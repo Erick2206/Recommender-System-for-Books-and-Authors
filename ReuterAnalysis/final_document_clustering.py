@@ -12,17 +12,19 @@ from time import time
 
 import numpy as np
 
-categories =[
-    'alt.atheism',
-    'rec.sport.baseball',
-    'comp.graphics',
-    'sci.space',
-    'rec.sport.hockey',
-    'comp.windows.x'
-]
+
 
 categories=['comp.sys.mac.hardware',
     'misc.forsale', 'talk.politics.mideast', 'rec.autos']
+
+categories =[
+        'alt.atheism',
+        'rec.sport.baseball',
+        'comp.graphics',
+        'sci.space',
+        'rec.sport.hockey',
+        'comp.windows.x'
+    ]
 
 dataset = fetch_20newsgroups(subset='train', categories=categories,
                              shuffle=True, random_state=42)
@@ -35,7 +37,7 @@ print("Extracting features from the training dataset using a sparse vectorizer")
 print("Running tfidf")
 vectorizer = TfidfVectorizer(max_df=0.5,max_features=10000,
                              min_df=2, stop_words='english',
-                             use_idf=False,norm='l2')
+                             use_idf=False,norm='l2',ngram_range=(2,2))
 X = vectorizer.fit_transform(dataset.data)
 print(X.shape)
 print("n_samples: %d, n_features: %d" % X.shape)
