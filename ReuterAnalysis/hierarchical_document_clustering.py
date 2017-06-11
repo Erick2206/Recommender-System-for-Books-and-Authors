@@ -45,8 +45,15 @@ print(X.shape)
 
 print("n_samples: %d, n_features: %d" % X.shape)
 print()
+count=0
+for x in X.toarray():
+    temp=set(x)
+    if (temp==set([0.])):
+        count+=1
 
-hc=AgglomerativeClustering(n_clusters=true_k, linkage='average', affinity='euclidean')
+print (count)
+'''
+hc=AgglomerativeClustering(n_clusters=true_k, linkage='ward', affinity='cosine')
 hc.fit(X.toarray())
 
 ari=metrics.adjusted_rand_score(labels, hc.labels_)
@@ -60,3 +67,4 @@ with open(outfile,'a') as out:
     out.write("ARI: %.3f\n" % metrics.adjusted_rand_score(labels, hc.labels_))
     out.write("Silhouette Co-efficient: %.3f\n" % silh_coeff)
     out.write("\n")
+'''
