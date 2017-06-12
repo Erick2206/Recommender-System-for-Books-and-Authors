@@ -4,6 +4,7 @@ from sklearn.cluster import AgglomerativeClustering
 from sklearn.datasets import fetch_20newsgroups
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn import metrics
+from sklearn.metrics.pairwise import cosine_similarity
 
 import logging
 from optparse import OptionParser
@@ -38,16 +39,20 @@ print("Extracting features from the training dataset using a sparse vectorizer")
 print("Running tfidf")
 vectorizer = TfidfVectorizer(max_df=0.5,max_features=10000,
                              min_df=2, stop_words='english',
-                             use_idf=True,ngram_range=(1,1))
+                             use_idf=False,ngram_range=(2,2))
 
 X = vectorizer.fit_transform(dataset.data)
 print(X.shape)
 
 print("n_samples: %d, n_features: %d" % X.shape)
 print()
+cos_sim=cosine_similarity(X)
+print (cos_sim)
 count=0
-for x in X.toarray():
+for x in cos_sim:
     temp=set(x)
+    print (temp)
+    print ("\n\n")
     if (temp==set([0.])):
         count+=1
 
